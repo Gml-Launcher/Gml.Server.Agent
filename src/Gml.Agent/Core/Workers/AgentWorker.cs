@@ -1,6 +1,6 @@
 using System.Threading.Channels;
-using Gml.Agent.Core.Services;
 using Gml.Agent.Interfaces;
+using Gml.Agent.Interfaces.HubClient;
 
 namespace Gml.Agent.Core.Workers;
 
