@@ -1,4 +1,3 @@
-using Gml.Agent.Core.Docker;
 using Gml.Agent.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,8 +10,7 @@ public static class DatabaseHelper
     public static IServiceCollection ConfigureDatabase(this IServiceCollection services)
     {
         services
-            .AddDbContextFactory<DatabaseContext>()
-            .AddSingleton<DockerClientFactory>();
+            .AddDbContextFactory<DatabaseContext>();
         
         return services;
     }

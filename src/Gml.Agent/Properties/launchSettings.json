@@ -6,7 +6,8 @@
       "dotnetRunMessages": true,
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development",
-        "GML_BACKEND_URL": "http://localhost:5000"
+        "GML_BACKEND_URL": "http://localhost:5000",
+        "GML_AGENT_TOKEN": ""
       }
     }
   }
