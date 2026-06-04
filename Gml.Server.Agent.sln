@@ -1,8 +1,53 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{35DCD8AE-9979-430F-BDBE-9D27CB780ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent", "src\Gml.Agent\Gml.Agent.csproj", "{92594B37-2DE1-4E54-B221-26501A13F7D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domains", "domains", "{BFD937A8-7CD5-447D-B207-ADD02010EE97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodule", "submodule", "{FBD6A50C-A058-41CA-9DAC-686C5BE261D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent.Core", "submodule\Gml.Agent.Core\Gml.Agent.Core.csproj", "{55CC5DA0-8648-499A-9FD5-4ABC89585231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent.Interfaces", "domains\Gml.Agent.Interfaces\Gml.Agent.Interfaces.csproj", "{4D1028EE-5B1A-454F-B3DF-3C89C4750E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent.Domains", "domains\Gml.Agent.Domains\Gml.Agent.Domains.csproj", "{644CC749-EDBA-4ADD-86A7-16DDFC979713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent.Database", "submodule\Gml.Agent.Database\Gml.Agent.Database.csproj", "{B3ED0C72-A95D-4E95-908B-7D5097826785}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92594B37-2DE1-4E54-B221-26501A13F7D5} = {35DCD8AE-9979-430F-BDBE-9D27CB780ADC}
+		{55CC5DA0-8648-499A-9FD5-4ABC89585231} = {FBD6A50C-A058-41CA-9DAC-686C5BE261D3}
+		{4D1028EE-5B1A-454F-B3DF-3C89C4750E7E} = {BFD937A8-7CD5-447D-B207-ADD02010EE97}
+		{644CC749-EDBA-4ADD-86A7-16DDFC979713} = {BFD937A8-7CD5-447D-B207-ADD02010EE97}
+		{B3ED0C72-A95D-4E95-908B-7D5097826785} = {FBD6A50C-A058-41CA-9DAC-686C5BE261D3}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92594B37-2DE1-4E54-B221-26501A13F7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92594B37-2DE1-4E54-B221-26501A13F7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92594B37-2DE1-4E54-B221-26501A13F7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92594B37-2DE1-4E54-B221-26501A13F7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55CC5DA0-8648-499A-9FD5-4ABC89585231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CC5DA0-8648-499A-9FD5-4ABC89585231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CC5DA0-8648-499A-9FD5-4ABC89585231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CC5DA0-8648-499A-9FD5-4ABC89585231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1028EE-5B1A-454F-B3DF-3C89C4750E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1028EE-5B1A-454F-B3DF-3C89C4750E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1028EE-5B1A-454F-B3DF-3C89C4750E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1028EE-5B1A-454F-B3DF-3C89C4750E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{644CC749-EDBA-4ADD-86A7-16DDFC979713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644CC749-EDBA-4ADD-86A7-16DDFC979713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644CC749-EDBA-4ADD-86A7-16DDFC979713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644CC749-EDBA-4ADD-86A7-16DDFC979713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3ED0C72-A95D-4E95-908B-7D5097826785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3ED0C72-A95D-4E95-908B-7D5097826785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3ED0C72-A95D-4E95-908B-7D5097826785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3ED0C72-A95D-4E95-908B-7D5097826785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
