@@ -11,4 +11,13 @@
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.8" />
         <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.8" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="AgentContainer.cs">
+        <DependentUpon>IAgentContainer.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Procedures\ContainerProcedures.cs">
+        <DependentUpon>IContainerProcedures.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
 </Project>

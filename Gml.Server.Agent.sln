@@ -24,6 +24,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{407EED
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4973B4D6-E22D-4FC7-A999-249641FE261C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent.Container.Tests", "tests\Gml.Agent.Container.Tests\Gml.Agent.Container.Tests.csproj", "{F8EBCF6E-9463-4C85-925A-D8385C09805E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,7 @@ Global
 		{644CC749-EDBA-4ADD-86A7-16DDFC979713} = {BFD937A8-7CD5-447D-B207-ADD02010EE97}
 		{B3ED0C72-A95D-4E95-908B-7D5097826785} = {FBD6A50C-A058-41CA-9DAC-686C5BE261D3}
 		{26C28715-5849-49A2-8AA7-658C35EE7FFC} = {FBD6A50C-A058-41CA-9DAC-686C5BE261D3}
+		{F8EBCF6E-9463-4C85-925A-D8385C09805E} = {4973B4D6-E22D-4FC7-A999-249641FE261C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{92594B37-2DE1-4E54-B221-26501A13F7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -62,5 +67,9 @@ Global
 		{26C28715-5849-49A2-8AA7-658C35EE7FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26C28715-5849-49A2-8AA7-658C35EE7FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26C28715-5849-49A2-8AA7-658C35EE7FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8EBCF6E-9463-4C85-925A-D8385C09805E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8EBCF6E-9463-4C85-925A-D8385C09805E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8EBCF6E-9463-4C85-925A-D8385C09805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8EBCF6E-9463-4C85-925A-D8385C09805E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
