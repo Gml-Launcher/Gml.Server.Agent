@@ -5,4 +5,7 @@ namespace Gml.Agent.Container;
 public interface IAgentContainer
 {
     IContainerProcedures Containers { get; }
+    
+    Task InitializeAsync(CancellationToken cancellationToken = default);
+    bool IsInitialize { get; }
 }
