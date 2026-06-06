@@ -9,10 +9,10 @@
     <ItemGroup>
       <ProjectReference Include="..\..\domains\Gml.Agent.Interfaces\Gml.Agent.Interfaces.csproj" />
       <ProjectReference Include="..\Gml.Agent.Database\Gml.Agent.Database.csproj" />
+      <ProjectReference Include="..\Gml.Agent.Container\Gml.Agent.Container.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Docker.DotNet" Version="3.125.15" />
       <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="10.0.8" />
       <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="10.0.8" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.8" />

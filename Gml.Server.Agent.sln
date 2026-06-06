@@ -16,6 +16,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent.Domains", "domain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent.Database", "submodule\Gml.Agent.Database\Gml.Agent.Database.csproj", "{B3ED0C72-A95D-4E95-908B-7D5097826785}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gml.Agent.Container", "submodule\Gml.Agent.Container\Gml.Agent.Container.csproj", "{26C28715-5849-49A2-8AA7-658C35EE7FFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{407EED75-00F3-49BB-8343-B6A99AB6500A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +35,7 @@ Global
 		{4D1028EE-5B1A-454F-B3DF-3C89C4750E7E} = {BFD937A8-7CD5-447D-B207-ADD02010EE97}
 		{644CC749-EDBA-4ADD-86A7-16DDFC979713} = {BFD937A8-7CD5-447D-B207-ADD02010EE97}
 		{B3ED0C72-A95D-4E95-908B-7D5097826785} = {FBD6A50C-A058-41CA-9DAC-686C5BE261D3}
+		{26C28715-5849-49A2-8AA7-658C35EE7FFC} = {FBD6A50C-A058-41CA-9DAC-686C5BE261D3}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{92594B37-2DE1-4E54-B221-26501A13F7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -49,5 +58,9 @@ Global
 		{B3ED0C72-A95D-4E95-908B-7D5097826785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3ED0C72-A95D-4E95-908B-7D5097826785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3ED0C72-A95D-4E95-908B-7D5097826785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C28715-5849-49A2-8AA7-658C35EE7FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C28715-5849-49A2-8AA7-658C35EE7FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C28715-5849-49A2-8AA7-658C35EE7FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26C28715-5849-49A2-8AA7-658C35EE7FFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

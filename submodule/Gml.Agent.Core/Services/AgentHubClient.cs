@@ -9,7 +9,7 @@ public class AgentHubClient : IAgentHubClient
     private readonly HubConnection _connection;
     private readonly ILogger<AgentHubClient> _logger;
 
-    public event Func<string, string, Task>? OnJobReceived;
+    public event Func<string, string, string, Task>? OnJobReceived;
     
     public AgentHubClient(string hubUrl, ILogger<AgentHubClient> logger)
     {
@@ -32,10 +32,10 @@ public class AgentHubClient : IAgentHubClient
     
     private void RegisterHubHandlers()
     {
-        _connection.On<string, string>("ExecuteTask", async (taskName, jsonData) =>
+        _connection.On<string, string, string>("ExecuteTask", async (jobId,taskName, jsonData) =>
         {
             if (OnJobReceived != null)
-                await OnJobReceived.Invoke(taskName, jsonData);
+                await OnJobReceived.Invoke(jobId, taskName, jsonData);
         });
     }
 
@@ -76,6 +76,18 @@ public class AgentHubClient : IAgentHubClient
                 _logger.LogError($"Ошибка подключения: {ex.Message}. Повтор через 5 секунд...");
                 await Task.Delay(5000, cancellationToken);
             }
+        }
+    }
+
+    public async Task SendDataAsync(string jobId, string type, string data, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            await _connection.SendAsync("SendData", jobId, type, data, cancellationToken);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Ошибка отправки сообщения: {ex.Message}");
         }
     }
 }

@@ -1,7 +1,7 @@
 using System.Runtime.InteropServices;
 using Docker.DotNet;
 
-namespace Gml.Agent.Core.Docker;
+namespace Gml.Agent.Container.Factories;
 
 public class DockerClientFactory : IDisposable
 {

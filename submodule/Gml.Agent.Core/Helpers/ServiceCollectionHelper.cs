@@ -1,4 +1,4 @@
-using Gml.Agent.Core.Docker;
+using Gml.Agent.Container.Factories;
 using Gml.Agent.Core.Services;
 using Gml.Agent.Interfaces;
 using Gml.Agent.Interfaces.HubClient;
